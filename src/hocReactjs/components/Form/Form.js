@@ -28,10 +28,10 @@ class Form  extends React.Component{
 
         return(
             <div className={classes.container}>
-                <p className={classes.title}>Đăng nhập</p>
+                <p className={classes.title}>login</p>
                 <div className={classes.content}>
                     <form>
-                        <label htmlFor='fname'>firts name</label><br />
+                        <label htmlFor='fname'>first name</label><br />
                         <input 
                             type='text'  
                             value={firstName}
