@@ -1,0 +1,129 @@
+.container{
+	width: 500px;
+	margin: 30px auto 0;
+	background-color: #00b7ff65;
+	position: relative;
+
+	.todoList{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 30px;
+
+		.search{
+			width: 300px;
+			height: 30px;
+			outline: none;
+			border-radius: 5px;
+		}
+		.modal{
+			display: flex;
+			text-decoration: none;
+			width: 80px;
+			height: 40px;
+			align-items: center;
+			background-color: #ff6a00;
+			justify-content: center;
+			border-radius: 10px;
+			color: white;
+			font-weight: bold;
+		}
+	
+		.content{
+			.addWork{
+				visibility: hidden;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				z-index: 10;
+				background-color: #63637a;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				opacity: 0;
+				transition: opacity linear 0.2s;
+
+			.add{
+				width: 200px;
+				height: 30px;
+				border-radius: 5px;
+				outline: none;
+				padding: 0 10px;
+			}
+			.submit{
+				height: 30px;
+				width:50px;
+				font-weight: bold;
+				background-color: #ff6a00;
+				border-radius: 5px;
+    		border: none;
+			}
+			.exit{
+				text-decoration: none;
+				position: absolute;
+				top: 0;
+				right: 5px;
+				color: #030303;
+			}
+			&:target{
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+		}
+	}
+
+	.list{
+		background-color: #0000ff85;
+		ul{
+			padding: 0;
+			margin: -5px 0 0 0;
+		}
+		.item{
+			list-style-type: none;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 10px 0;
+			background-color: #353e58c4;
+			padding: 0 20px 0 30px;
+			color: #fff;
+
+			.row{
+				display: flex;
+				visibility: hidden;
+				transition-delay: 0.2s;
+				.link{
+					display: flex;
+					align-items: center;
+					justify-content:center;
+					width:30px;
+					height:30px;
+					background-color: #ff6a00;
+					border-radius: 50%;
+					font-size: 12px;
+					text-decoration: none;
+					color: #fff;
+					font-weight: bold;
+					margin-left: 5px;
+					&:hover {
+						background-color: #ff6a0027;
+					}
+				}
+				
+			}
+			&:hover .row{
+					visibility: visible;
+				}
+		}
+	}
+}
+
+.class{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity events 0.2s;
+}

@@ -1,0 +1,171 @@
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    .heading{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+        color: #3C3C3E;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .contentText{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .text{
+            text-align: center;
+            max-width: 594px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333333;
+            margin: 0;
+        }
+    }
+    .title{
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #3C3C3E;
+        margin: 36px 0 16px;
+    }
+    .content{
+        width: 100%;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        background-color: #FCFCFC;
+        .text{
+            text-align: center;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 27px;
+            color: #3C3C3E;
+            padding: 24px 0 28px;
+            margin: 0;
+        }
+        .contentRow{
+            display: flex;
+            justify-content: center;
+            .mr{
+                margin-right: 2px;
+            }
+            .contentBrg{
+                background-color: #FCFCFC !important;
+            }
+            .content{
+                flex: 1;
+                border-radius: 0;
+                box-shadow: none;
+                background-color: #f5f6f8;
+                .row{
+                    display: flex;
+                    align-items: center;
+                    justify-content:center ;
+                    padding: 24px 0 20px;
+                    .title{
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: #3C3C3E;
+                        margin: 0;
+                    }
+                    .icon{
+                        margin: 0 20px;
+                    }
+                }
+                .item{
+                    max-width: 533px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #3C3C3E;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+        .contentFooter{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 16px 0;
+            .row{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .title{
+                    width:  369px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #3C3C3E;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .BoutiqueLaunchpad{
+        padding: 24px 0;
+        background-color: #FCFCFC;
+        .title{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 27px;
+            color: #3C3C3E;
+            text-align: center;
+            margin-bottom: 4px;
+            margin-top: 0;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .text{
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                color: #3C3C3E;
+                text-decoration: underline;
+                margin: 0;
+            }
+        }
+    }
+    
+    .ValueCreation{
+        margin: 68px auto 0;
+        max-width: 737px;
+        width: 100%;
+        border-radius: 8px;
+        display: flex;
+        align-items: stretch;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        .left{
+            max-width: 288px;
+            width: 100%;
+            background-color: #EECE7C;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .title{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 34px;
+                color: #3C3C3E;
+                margin: 0;
+            }
+        }
+        .right{
+            flex: 1;
+            background-color: #3C3C3E;
+            padding: 20px 0 16px;
+            .item{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
