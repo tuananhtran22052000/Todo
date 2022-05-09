@@ -3,14 +3,15 @@ import classes from './Form.module.scss'
 
 class Form  extends React.Component{
     state = {
-        firtsName: '',
+        firstName: '',
         lastName:'',
     }
     render(){
-        let { firtsName, lastName } = this.state
+        let { firstName, lastName } = this.state
+
         const handleOnChangFname = (e) =>{
             this.setState({
-                firtsName: e.target.value
+                firstName: e.target.value
             })
         }
 
@@ -20,7 +21,8 @@ class Form  extends React.Component{
             })
         }
 
-        const handleSubmit = () =>{
+        const handleSubmit = (e) =>{
+            e.preventDefault() //debug khi nhấn submit k bị refresh
             console.log('output', this.state)
         }
 
@@ -32,7 +34,7 @@ class Form  extends React.Component{
                         <label htmlFor='fname'>firts name</label><br />
                         <input 
                             type='text'  
-                            value={firtsName}
+                            value={firstName}
                             onChange={(e) =>{handleOnChangFname(e)}}
                         />
                         <br />
@@ -43,7 +45,7 @@ class Form  extends React.Component{
                             onChange={(e) =>{handleOnChangLname(e)}} 
                         /><br />
                         <button
-                            onClick={handleSubmit()}
+                            onClick={ (e) =>{handleSubmit(e)}}
                         >Gửi</button> 
                     </form>
                 </div>
